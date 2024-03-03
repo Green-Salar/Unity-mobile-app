@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d9200ebc509704aefa38208fd0fba7c1
+timeCreated: 1562764230
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 140111
+  packageName: 'Cross-Platform Native Plugins : Essential Kit (Mobile - iOS & Android)'
+  packageVersion: 2.7.1
+  assetPath: Assets/Plugins/VoxelBusters/EssentialKit/Runtime/Simulator/NotificationServices/MutableNotification.cs
+  uploadId: 647950

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 45e84373853c9474f82ce4161e0dd7ff
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 140111
+  packageName: 'Cross-Platform Native Plugins : Essential Kit (Mobile - iOS & Android)'
+  packageVersion: 2.7.1
+  assetPath: Assets/Plugins/Android/com.voxelbusters.essentialkit.androidlib/FindMethodCount.command
+  uploadId: 647950

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4414527f0df3b4cfd9d9f771355c9aef
+timeCreated: 1550467021
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 140111
+  packageName: 'Cross-Platform Native Plugins : Essential Kit (Mobile - iOS & Android)'
+  packageVersion: 2.7.1
+  assetPath: Assets/Plugins/VoxelBusters/EssentialKit/Documentation/Readme.pdf
+  uploadId: 647950

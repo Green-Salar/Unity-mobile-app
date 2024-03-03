@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c74479925cce6415092a5e975ea135bc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 140111
+  packageName: 'Cross-Platform Native Plugins : Essential Kit (Mobile - iOS & Android)'
+  packageVersion: 2.7.1
+  assetPath: Assets/Plugins/VoxelBusters/EssentialKit/Runtime/Android/BillingServices/NativeFetchBillingProductsListener.cs
+  uploadId: 647950

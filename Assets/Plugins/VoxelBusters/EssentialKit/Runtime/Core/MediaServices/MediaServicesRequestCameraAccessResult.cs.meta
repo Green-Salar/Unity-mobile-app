@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6727b53da55314e0cb79679fd3cf87dd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 140111
+  packageName: 'Cross-Platform Native Plugins : Essential Kit (Mobile - iOS & Android)'
+  packageVersion: 2.7.1
+  assetPath: Assets/Plugins/VoxelBusters/EssentialKit/Runtime/Core/MediaServices/MediaServicesRequestCameraAccessResult.cs
+  uploadId: 647950

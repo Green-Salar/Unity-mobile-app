@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 26957925e61e641f8bb3a909acc489ea
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 140111
+  packageName: 'Cross-Platform Native Plugins : Essential Kit (Mobile - iOS & Android)'
+  packageVersion: 2.7.1
+  assetPath: Assets/Plugins/VoxelBusters/EssentialKit/Examples/Scripts/VoxelBusters.EssentialKit.Demo.asmdef
+  uploadId: 647950

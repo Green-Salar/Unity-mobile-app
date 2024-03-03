@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e48bdef6a5a74429b8683e21e5cb9b32
+timeCreated: 1554383788
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 140111
+  packageName: 'Cross-Platform Native Plugins : Essential Kit (Mobile - iOS & Android)'
+  packageVersion: 2.7.1
+  assetPath: Assets/Plugins/VoxelBusters/EssentialKit/Runtime/iOS/MediaServices/PHAuthorizationStatus.cs
+  uploadId: 647950
