@@ -11,13 +11,7 @@ public class image_sprit_manager : MonoBehaviour
     private Image[] img,backgound_img;
     void Update()
     {
-        for ( int i = 1; i < 6; i++)
-        {
-            if (playerPrefsMANAGER.ins_list["img" + i] != "-")
-            {
-                Load_Image_review(playerPrefsMANAGER.ins_list["img" + i], i);
-            }
-        } 
+
 
     }
     public void Load_Image_review(string _img_name_str, int imgNum)// imgnums 1-7 imgs. 1-6 for report and 7th is for showing the img clicked
@@ -27,7 +21,7 @@ public class image_sprit_manager : MonoBehaviour
             try
             {
                 string path = Application.persistentDataPath + $"/{_img_name_str}";
-                Debug.Log(path);
+                //Debug.Log(path);
                 Texture2D texture = new Texture2D(500, 500, TextureFormat.RGB24, false);
                 texture.filterMode = FilterMode.Point;
                 byte[] text = File.ReadAllBytes(path);
@@ -42,8 +36,9 @@ public class image_sprit_manager : MonoBehaviour
                 Debug.Log("no image number." + imgNum);
             }
         }
-        else if (_img_name_str == "-")
-        { Debug.Log("no image taken." + imgNum); img[imgNum].gameObject.SetActive(false); }
+        //else if (_img_name_str == "-")
+        //{ //Debug.Log("no image taken." + imgNum); img[imgNum].gameObject.SetActive(false); }
+    
     }
     // Start is called before the first frame update
     void Start()

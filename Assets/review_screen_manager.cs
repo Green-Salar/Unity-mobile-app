@@ -9,7 +9,7 @@ public class review_screen_manager : MonoBehaviour
     public void save_and_continue_review_review1()
     {
         Debug.Log("save_and_continue");
-        SceneManager.LoadScene("ins_review_2", LoadSceneMode.Additive);
+        SceneManager.LoadScene("ins_rev_page2", LoadSceneMode.Additive);
     }
     public void save_and_continue_review_2_to_3()
     {
@@ -18,7 +18,7 @@ public class review_screen_manager : MonoBehaviour
     }
     public void unload_ins_review_2()
     {
-        SceneManager.UnloadSceneAsync("ins_review_2");
+        SceneManager.UnloadSceneAsync("ins_rev_page2");
     }
     public void unload_ins_review_1()
     {
@@ -27,7 +27,7 @@ public class review_screen_manager : MonoBehaviour
     public void unload_ins_review_3()
     {
         SceneManager.UnloadSceneAsync("ins_review_3");
-        Debug.Log("ok");
+        //Debug.Log("ok");
     }
     public void Save_lastPage_review()
     {

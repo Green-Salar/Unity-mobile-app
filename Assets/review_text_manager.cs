@@ -55,7 +55,7 @@ public class review_text_manager : MonoBehaviour
     {
         int safety_number = Int32.Parse(ins_list["SN"]);
         Color[] _colors = safty_vars.safty_colors;
-        safety_img.color = _colors[safety_number];
+        safety_img.color = _colors[safety_number-1];
     }
 
     public void Load_Image_review(string _img_name_str, int imgNum)// imgnums 1-7 imgs. 1-6 for report and 7th is for showing the img clicked
@@ -65,15 +65,20 @@ public class review_text_manager : MonoBehaviour
             try
             {
                 string path = Application.persistentDataPath + $"/{_img_name_str}";
-                Debug.Log(path);
+                //Debug.Log(path);
                 Texture2D texture = new Texture2D(500, 500, TextureFormat.RGB24, false);
                 texture.filterMode = FilterMode.Point;
                 byte[] text = File.ReadAllBytes(path);
                 texture.LoadImage(text);
                 Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100f, 1, SpriteMeshType.FullRect);
                 img[imgNum].sprite = newSprite;
-                img[imgNum].gameObject.AddComponent<Button>().onClick.AddListener(() => { background_img_viewPort.gameObject.SetActive(true); Load_Image_review(_img_name_str, 6); });//6th is the full screen image
-
+                if (imgNum != 6)
+                {
+                    img[imgNum].gameObject.AddComponent<Button>().onClick.AddListener(  () => 
+                    { background_img_viewPort.gameObject.SetActive(true); 
+                        Load_Image_review(_img_name_str, 6); 
+                    });//6th is the full screen image
+                }
             }
             catch
             {
@@ -137,6 +142,9 @@ public class review_text_manager : MonoBehaviour
         
         return answer;
         
+    }
+    public void comment_handling(){
+        sql_handler.update_comment("inspectionsENFR", ins_list["ID"], comment.text);
     }
 
 }

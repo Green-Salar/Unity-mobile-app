@@ -12,20 +12,25 @@ public class DSC_review : MonoBehaviour
     public static string selected_txt;
     static string caption;
     int m_DropdownValue;
-    void Start()
+
+    void Awake()
     {
         m_Dropdown = GetComponent<Dropdown>();
-        //m_Dropdown.interactable = false;
+    }
+    void Start()
+    {
+
         if (playerPrefsMANAGER.ins_list["DSC"] == "-")
         {
             caption = "Sélectionnez la sous-catégorie de défaut";
             if (Language_Manager.lang == 0) caption = "Select Defect Sub Category";
         }
+
         else
         {
             if (Language_Manager.lang == 0)
             {
-
+                Debug.Log("eng dsc is insdise");
                 caption = playerPrefsMANAGER.ins_list["DSC"];
                 Defectgetter(playerPrefsMANAGER.ins_list["RT"], playerPrefsMANAGER.ins_list["DC"], playerPrefsMANAGER.ins_list["DSC"]);
             }
@@ -37,14 +42,15 @@ public class DSC_review : MonoBehaviour
             }
             StartCoroutine(init_defects());
         }
-        m_Dropdown.captionText.text = caption;
+        m_DropOptions.Insert(0, caption);
     }
 
     private IEnumerator init_defects()
     {
         yield return new WaitForSeconds(.2f);
-        if (Language_Manager.lang == 0) preValue_toggle_Instantiator(playerPrefsMANAGER.ins_list["D"]);
-        else preValue_toggle_Instantiator(playerPrefsMANAGER.ins_list["DF"]);
+        //if (Language_Manager.lang == 0) preValue_toggle_Instantiator(playerPrefsMANAGER.ins_list["D"]);
+        //else preValue_toggle_Instantiator(playerPrefsMANAGER.ins_list["DF"]);
+        Defectgetter(playerPrefsMANAGER.ins_list["RT"], playerPrefsMANAGER.ins_list["DC"], playerPrefsMANAGER.ins_list["DSC"]);
     }
     public static void changeScript(List<string> m_DropOptions)
     {
@@ -128,6 +134,7 @@ public class DSC_review : MonoBehaviour
         newtoggle.transform.SetParent(canvas.transform, false);
         newtoggle.GetComponentInChildren<Toggle>().isOn = true;
         newtoggle.transform.SetSiblingIndex(0);
+        
     }
 }
 

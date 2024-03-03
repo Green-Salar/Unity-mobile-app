@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "924998892639",
+    "project_id": "unity-try-optim",
+    "storage_bucket": "unity-try-optim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924998892639:android:03a9f5c8bedec66fa1efea",
+        "android_client_info": {
+          "package_name": "com.opst.incpection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924998892639-b2jc50rdnhfk7i959e05n6gsd3da8oja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHz3_0g6SqNk0NH7QDfmi_5AQt1RzaUIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924998892639-b2jc50rdnhfk7i959e05n6gsd3da8oja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

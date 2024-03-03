@@ -11,8 +11,18 @@ public class DC_review : MonoBehaviour
     public static string selected_txt;
     static string caption;
     int m_DropdownValue;
+
+    void Awake()
+    {
+        m_Dropdown = GetComponent<Dropdown>();
+    }
     void Start()
     {
+        StartCoroutine(init_drpdown());
+    }
+    private IEnumerator init_drpdown()
+    {
+        yield return new WaitForSeconds(.5f);
         m_Dropdown = GetComponent<Dropdown>();
         //m_Dropdown.interactable = false;
         if (playerPrefsMANAGER.ins_list["DC"] == "-")
@@ -22,10 +32,10 @@ public class DC_review : MonoBehaviour
         }
         else
         {
-
             caption = playerPrefsMANAGER.ins_list["DC"];
             if (Language_Manager.lang == 1) caption = playerPrefsMANAGER.ins_list["DCF"];
         }
+        m_DropOptions.Insert(0, caption);
         m_Dropdown.captionText.text = caption;
     }
 
