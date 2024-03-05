@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoxelBusters.CoreLibrary.Ed
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoxelBusters.EssentialKit.Editor.Build.iOSModule", "VoxelBusters.EssentialKit.Editor.Build.iOSModule.csproj", "{CE2FC69F-00C9-1B43-F708-A98A8C2FB853}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirebaseMessagingActivityGenerator", "FirebaseMessagingActivityGenerator.csproj", "{ACE57517-AC90-8700-CCBE-43D93A634543}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{CE2FC69F-00C9-1B43-F708-A98A8C2FB853}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE2FC69F-00C9-1B43-F708-A98A8C2FB853}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE2FC69F-00C9-1B43-F708-A98A8C2FB853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE57517-AC90-8700-CCBE-43D93A634543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE57517-AC90-8700-CCBE-43D93A634543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE57517-AC90-8700-CCBE-43D93A634543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE57517-AC90-8700-CCBE-43D93A634543}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
