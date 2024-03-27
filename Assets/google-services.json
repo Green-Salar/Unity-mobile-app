@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "100517574533",
+    "project_id": "opti-cf3a2",
+    "storage_bucket": "opti-cf3a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100517574533:android:ad438da072469a90e3b6ec",
+        "android_client_info": {
+          "package_name": "com.OPST.Inspector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100517574533-r0pg3ofii3ps8j830r4d69uk6l14pju2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdKyipTON_jwnFzSpAULfwYcwSFiocI4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100517574533-r0pg3ofii3ps8j830r4d69uk6l14pju2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

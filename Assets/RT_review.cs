@@ -13,24 +13,64 @@ using UnityEngine.UI;
     public static string selected_txt;
     static string caption;
     int m_DropdownValue;
+    public Text dctxt, dsctxt, Text;
+    public GameObject dcdrp, dscdrp;
     void Awake()
+    {
+        m_Dropdown = GetComponent<Dropdown>();
+        Debug.Log("RT_review Awake");
+        foreach( var kvp in playerPrefsMANAGER.ins_list)
+        {
+                Debug.Log(kvp.Key + " " + kvp.Value);
+        }
+    }
+    void Start()
     {
         m_Dropdown = GetComponent<Dropdown>();
         if (playerPrefsMANAGER.ins_list["RT"] == "-") {
 
             caption = "Select Racking type";
-            if (Language_Manager.lang == 1) caption = "Sélectionnez le type de rayonnage";
+            if (Language_Manager.lang == 1) caption = "Sï¿½lectionnez le type de rayonnage";
         } else
         {
             Debug.Log("we have sth here RT!");
-
             caption = "Racking type:" + playerPrefsMANAGER.ins_list["RT"];
             if (Language_Manager.lang == 1)  caption = "Plattier: " + playerPrefsMANAGER.ins_list["RTF"];
         }
         m_DropOptions.Insert(0, caption);
-    }
+        initiate_txt_object_dc_dsc();
 
-    public static void changeScript(List<string> m_DropOptions)
+    }
+    //the next 2 functions are because I couldn't change the dropdown value on start so its another way to do it. 
+    void initiate_txt_object_dc_dsc()
+    {
+        dcdrp.SetActive(false);
+        dscdrp.SetActive(false);
+        dctxt.gameObject.SetActive(true);
+        dctxt.text = (Language_Manager.lang == 0 ? "Defect Category: " + playerPrefsMANAGER.ins_list["DC"] : "Catï¿½gorie de dï¿½faut: " + playerPrefsMANAGER.ins_list["DCF"]);
+        dsctxt.gameObject.SetActive(true);
+        dsctxt.text = (Language_Manager.lang == 0 ? "Defect Sub Category: " + playerPrefsMANAGER.ins_list["DSC"] : "Sous-catï¿½gorie de dï¿½faut: " + playerPrefsMANAGER.ins_list["DSCF"]);
+    }
+    void start_edditing_dc_dsc()
+    {
+
+    }
+    public void startEditing()
+    {
+        try
+        {
+            dctxt.gameObject.SetActive(false);
+            dsctxt.gameObject.SetActive(false);
+
+            dcdrp.SetActive(true);
+            dscdrp.SetActive(true);
+        }
+        catch
+        {
+
+        }
+    }
+    public static  void changeScript(List<string> m_DropOptions)
     {
         //Clear the old options of the Dropdown menu
         try { m_Dropdown.ClearOptions(); } catch { }

@@ -112,14 +112,14 @@ public class relats_review : MonoBehaviour
                 {
                     _tempD = str; ;
                 }
-                Debug.Log(_tempD);
+                //Debug.Log(_tempD);
                 dbcmd = dbcon.CreateCommand();
                 dbcmd.CommandText = "SELECT " + _select + " from " + _tableName + " WHERE " + _where + " ='" + _tempD + "' ;";
                 reader = dbcmd.ExecuteReader();
                 while (reader.Read())
                 {
                     string t = reader.GetString(0).TrimStart('#');
-                    Debug.Log(t);
+                  //  Debug.Log(t);
                     try
                     {
                         _ = !mainSTR.Contains(t) ? mainSTR = mainSTR + t : t = ""; 

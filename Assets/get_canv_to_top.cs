@@ -15,12 +15,11 @@ public class get_canv_to_top : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        search_backGround.SetActive(false);
+        //search_backGround.SetActive(false);
         finish_btn.SetActive(false);
     }
     public void take_to_top()
     {
-
         search_backGround.SetActive(true);
         finish_btn.SetActive(true);
         Debug.Log("here");
